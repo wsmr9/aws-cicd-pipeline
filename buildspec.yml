@@ -1,0 +1,8 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo "Hello, CodeBuild!"
+      - echo "This is a test build."
+
