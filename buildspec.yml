@@ -1,8 +1,18 @@
 version: 0.2
 
 phases:
+  install:
+    runtime-versions:
+      nodejs: 14
+    commands:
+      - echo "Installing dependencies..."
+      - npm install
+
   build:
     commands:
-      - echo "Hello, CodeBuild!"
-      - echo "This is a test build."
+      - echo "Building the application..."
+      - npm run build
 
+artifacts:
+  files:
+    - '**/*'
